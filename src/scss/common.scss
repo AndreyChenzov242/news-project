@@ -1,0 +1,86 @@
+@import "./configs.scss";
+
+.container {
+  max-width: 1605px;
+  margin: 0 auto;
+  padding: 16px 24px 0 24px;
+
+  @media screen and(max-width:$breakpoint-up-xl) {
+    max-width: 1170px;
+  }
+}
+
+.search-form {
+  display: flex;
+  border: 2px solid #c4c4c4;
+  padding: 8px;
+
+  &__input-text {
+    border: none;
+    background-color: transparent;
+    line-height: 1;
+    padding-right: 8px;
+  }
+}
+
+.svg {
+  width: 18px;
+  height: 18px;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+
+  &--grey {
+    background-color: #6c6c6c;
+  }
+}
+
+.red-circle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $red;
+
+  @media screen and(max-width:$breakpoint-up-xl) {
+    left: -14px;
+  }
+}
+
+.lg-d-none {
+  @media screen and(max-width:$breakpoint-up-lg) {
+    display: none;
+  }
+}
+
+.social-wrapper {
+  display: flex;
+  align-items: flex-end;
+
+  &__text {
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 1;
+  }
+
+  &__links {
+    display: flex;
+    max-width: 100px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .twitter {
+    padding-top: 2px;
+  }
+}
