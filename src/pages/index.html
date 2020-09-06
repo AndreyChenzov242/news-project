@@ -11,18 +11,18 @@
       <header class="header">
         <div class="header__content-wrapper">
           <div class="header__logo-wrapper">
-            <div class="header__img-wrapper">
+            <a href="#" class="header__img-wrapper">
               <img
                 class="header__logo-img"
                 src="../assets/img/logo.png"
                 alt="logo"
               />
-            </div>
+            </a>
 
             <div class="header__logo-text">TV Post</div>
           </div>
 
-          <ul class="header__navbar">
+          <ul class="header__navbar sm-d-none">
             <li class="navbar__item"><a href="#">новини</a></li>
             <li class="navbar__item"><a href="#">статті</a></li>
             <li class="navbar__item"><a href="#">інтервєю</a></li>
@@ -30,7 +30,7 @@
             <li class="navbar__item"><a href="#">блоги</a></li>
           </ul>
 
-          <div class="header__search-and-smm">
+          <div class="header__search-and-smm xxs-d-none">
             <form class="search-form">
               <input
                 class="search-form__input-text"
@@ -43,7 +43,7 @@
                 </svg>
               </button>
             </form>
-            <div class="social-wrapper">
+            <div class="social-wrapper sm-d-none">
               <div class="social-wrapper__text">Підписатися:</div>
               <div class="social-wrapper__links">
                 <a href="#">
@@ -69,24 +69,66 @@
               </div>
             </div>
           </div>
+
+          <svg class="svg header__search">
+            <use xlink:href="../assets/svg/sprite.svg#search"></use>
+          </svg>
+
+          <div class="hamburger header__hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
         </div>
-
         <div class="line"></div>
-
         <div class="header__special-projects">
           <div class="header__special-projects-wrapper">
             <div class="special-projects__text">спецпроекти</div>
-            <a class="special-projects__item red-circle">Медіатек</a>
-            <a class="special-projects__item red-circle"
+            <a href="#" class="special-projects__item red-circle sm-d-none"
+              >Медіатек</a
+            >
+            <a href="#" class="special-projects__item red-circle sm-d-none"
               >Громадянське суспільство</a
             >
-            <a class="special-projects__item red-circle">
+            <a href="#" class="special-projects__item red-circle sm-d-none">
               Правда і вимисел про короновірус
             </a>
-            <a class="special-projects__item red-circle lg-d-none">
+            <a href="#" class="special-projects__item red-circle lg-d-none">
               Короновірус: моніторинг медіа
             </a>
-            <a class="special-projects__item red-circle">Партнерські проекти</a>
+            <a href="#" class="special-projects__item red-circle sm-d-none"
+              >Партнерські проекти</a
+            >
+
+            <div class="social-wrapper special-projects__social-wrapper">
+              <div class="social-wrapper__text">Підписатися:</div>
+              <div class="social-wrapper__links">
+                <a href="#">
+                  <svg class="svg">
+                    <use xlink:href="../assets/svg/sprite.svg#sm-wifi"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg">
+                    <use
+                      xlink:href="../assets/svg/sprite.svg#sm-facebook"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg">
+                    <use
+                      xlink:href="../assets/svg/sprite.svg#sm-telegram"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg twitter">
+                    <use xlink:href="../assets/svg/sprite.svg#sm-twitter"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
 
           <div class="line line--grey"></div>
