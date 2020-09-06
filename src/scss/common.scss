@@ -91,6 +91,7 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  z-index: 10000;
 
   .line {
     background-color: #000000;
@@ -100,6 +101,9 @@
 
   @media screen and(max-width:$breakpoint-up-sm) {
     display: flex;
+  }
+  @media screen and(max-width:$breakpoint-up-xxs) {
+    width: 20px;
   }
 }
 
