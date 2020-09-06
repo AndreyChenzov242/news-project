@@ -1,16 +1,9 @@
-@keyframes show {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.main__content-wrapper {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px;
 }
-@keyframes sidebar-content {
-  from {
-    right: -100%;
-  }
-  to {
-    right: 0;
-  }
+.main__content-wrapper .col {
+  background-color: rosybrown;
 }

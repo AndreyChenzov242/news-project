@@ -7,3 +7,11 @@ $(".hamburger").click(function () {
 $(".sidebar__backdrop").click(function () {
   $(".hamburger").click();
 });
+
+$(".swiper-wrapper").slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  arrows: false,
+});
