@@ -8,6 +8,23 @@
   @media screen and(max-width:$breakpoint-up-xl) {
     max-width: 1218px;
   }
+
+  @media screen and(max-width:$breakpoint-up-md) {
+    max-width: 100%;
+  }
+}
+
+.title {
+  font-size: 26px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  position: relative;
+  color: #000000;
+
+  @media screen and(max-width:$breakpoint-up-xl) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 
 .search-form {
@@ -42,14 +59,25 @@
   }
 }
 
-.rect:before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 4px;
-  height: 100%;
-  left: -8px;
-  background-color: #f04e45;
+.rect {
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    left: -8px;
+    background-color: #f04e45;
+  }
+
+  &--blue::before {
+    background-color: #0878f7;
+  }
+
+  &--wide::before {
+    width: 12px;
+    // left: -20px;
+  }
 }
 
 .company-news:before {
@@ -158,26 +186,42 @@
   }
 }
 
+.xl-d-none {
+  @media screen and(max-width:$breakpoint-up-xl) {
+    display: none;
+  }
+}
+
+.xl-d-block {
+  @media screen and(max-width:$breakpoint-down-xl) {
+    display: block;
+  }
+}
+
 .lg-d-none {
   @media screen and(max-width:$breakpoint-up-lg) {
     display: none;
   }
 }
+
 .md-d-none {
   @media screen and(max-width:$breakpoint-up-md) {
     display: none;
   }
 }
+
 .sm-d-none {
   @media screen and(max-width:$breakpoint-up-sm) {
     display: none;
   }
 }
+
 .xs-d-none {
   @media screen and(max-width:$breakpoint-up-xs) {
     display: none;
   }
 }
+
 .xxs-d-none {
   @media screen and(max-width:$breakpoint-up-xxs) {
     display: none;
