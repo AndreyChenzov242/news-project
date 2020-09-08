@@ -553,6 +553,10 @@
         position: relative;
         margin-right: 38px;
         width: 60%;
+
+        @media screen and(max-width:$breakpoint-up-xl) {
+          margin-right: 30px;
+        }
       }
 
       &__title {
@@ -586,6 +590,12 @@
         line-height: 0.83;
         color: #4b4b4b;
         margin-top: 42px;
+
+        @media screen and(max-width:$breakpoint-up-xl) {
+          font-size: 26px;
+          line-height: 1.5;
+          margin-top: 20px;
+        }
       }
 
       &__cards-wrapper {
@@ -597,10 +607,19 @@
         display: flex;
         padding: 21px 0;
 
+        @media screen and(max-width:$breakpoint-up-xl) {
+          padding: 0 0 15px 0;
+        }
+
         .card {
           &__video {
             width: 227px;
             height: 117px;
+
+            @media screen and(max-width:$breakpoint-up-xl) {
+              width: 170px;
+              height: 110px;
+            }
 
             iframe {
               width: 100%;
@@ -610,10 +629,17 @@
 
           &__title {
             font-size: 24px;
-            line-height: 30px;
+            line-height: 1.25;
             color: #6d6d6d;
             margin-left: 22px;
             max-width: 300px;
+
+            @media screen and(max-width:$breakpoint-up-xl) {
+              font-size: 20px;
+              line-height: 1.4;
+              max-width: 235px;
+              align-self: center;
+            }
           }
         }
       }

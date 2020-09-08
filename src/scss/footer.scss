@@ -1,0 +1,113 @@
+@import "./configs";
+@import "./colors";
+@import "./configs";
+@import "./animations";
+
+.footer {
+  background: #1f2124;
+  padding: 40px 0 30px 0;
+
+  &-wrapper {
+    padding: 0 20px;
+    max-width: 1254px;
+    margin: 0 auto;
+    // display: grid;
+    // gap: 80px;
+    // grid-template-columns: minmax(174px, 1fr) minmax(702px, 1fr) minmax(
+    //     251px,
+    //     1fr
+    //   );
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and(max-width: $breakpoint-up-xl) {
+      width: 100%;
+      max-width: 100%;
+      //   grid-template-columns: minmax(174px, 1fr) minmax(678px, 1fr) minmax(
+      //       118px,
+      //       1fr
+      //     );
+    }
+  }
+
+  &__logo-wrapper {
+    display: flex;
+    margin-right: 24px;
+
+    .logo {
+      &__title {
+        font-size: 36px;
+        line-height: 1.13;
+        text-transform: uppercase;
+        color: #6d6e70;
+        margin-right: 16px;
+      }
+
+      &__circle {
+        width: 38px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        line-height: 1.15;
+        text-transform: uppercase;
+        color: #fafafa;
+        background-color: #f2360c;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__content-wrapper {
+    color: #636466;
+    font-size: 18px;
+    line-height: 1.44;
+    max-width: 700px;
+
+    @media screen and(max-width:$breakpoint-up-xl) {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .cookie {
+      color: #fff;
+    }
+  }
+
+  &__social-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 24px;
+
+    @media screen and(max-width: $breakpoint-up-xl) {
+      max-width: 120px;
+      align-self: self-start;
+    }
+
+    svg {
+      cursor: pointer;
+      margin-bottom: 15px;
+      margin: 0 4px;
+
+      @media screen and(max-width: $breakpoint-up-xl) {
+        margin: 0 2px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__links-wrapper {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    display: flex;
+
+    .link {
+      margin-right: 32px;
+      font-size: 13px;
+      line-height: 1.84;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+}
