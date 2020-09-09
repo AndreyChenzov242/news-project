@@ -12,7 +12,12 @@
         1fr
       );
 
-    grid-template-rows: auto;
+    grid-template-areas:
+      "news swiper special-projects"
+      "news publications special-projects"
+      "video video video";
+
+    grid-template-rows: max-content;
 
     @media screen and(max-width:$breakpoint-up-xxl) {
       grid-template-columns: minmax(300px, 1fr) minmax(530px, 1.2fr) minmax(
@@ -41,7 +46,20 @@
       gap: 20px;
     }
 
+    @media screen and(max-width:$breakpoint-up-md) {
+      gap: 24px;
+      grid-template-columns: 100%;
+      grid-template-areas:
+        "swiper"
+        "news"
+        "publications"
+        "video"
+        "special-projects";
+    }
+
     .news {
+      grid-area: news;
+
       &__title {
         margin-left: 8px;
         margin-bottom: 12px;
@@ -86,7 +104,9 @@
       }
     }
 
-    .main__publications {
+    .main__swiper {
+      grid-area: swiper;
+
       .slick-dotted.slick-slider {
         margin: 0;
       }
@@ -94,10 +114,6 @@
       .swiper-wrapper {
         width: 100%;
         position: relative;
-
-        @media screen and(max-width:$breakpoint-up-xl) {
-          height: 300px;
-        }
 
         .slick-dots {
           height: 20px;
@@ -113,11 +129,19 @@
             height: 300px;
           }
 
+          @media screen and(max-width:$breakpoint-up-md) {
+            height: 530px;
+          }
+
           img {
             width: 100%;
             height: 100%;
             object-fit: none;
             object-position: top;
+
+            @media screen and(max-width:$breakpoint-up-md) {
+              object-fit: cover;
+            }
           }
 
           &__title {
@@ -165,17 +189,16 @@
           }
         }
       }
+    }
+
+    .main__publications {
+      grid-area: publications;
 
       .publications {
         &__title-wrapper {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin-top: 50px;
-
-          @media screen and(max-width:$breakpoint-up-xl) {
-            margin-top: 20px;
-          }
         }
 
         &__title {
@@ -198,6 +221,11 @@
 
           @media screen and(max-width:$breakpoint-up-xl) {
             gap: 30px;
+          }
+
+          @media screen and(max-width:$breakpoint-up-md) {
+            gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr;
           }
         }
 
@@ -244,7 +272,31 @@
     }
 
     .main__special-projects {
+      grid-area: special-projects;
+
+      @media screen and(max-width:$breakpoint-up-md) {
+        display: flex;
+      }
+
       .special-projects {
+        &__wrapper {
+          @media screen and(max-width:$breakpoint-up-md) {
+            width: 100%;
+          }
+
+          &--left {
+            @media screen and(max-width:$breakpoint-up-md) {
+              padding-right: 10px;
+            }
+          }
+
+          &--right {
+            @media screen and(max-width:$breakpoint-up-md) {
+              padding-left: 10px;
+            }
+          }
+        }
+
         &__title {
           margin-left: 8px;
           margin-bottom: 15px;
@@ -541,8 +593,8 @@
   }
 
   &__video {
+    grid-area: video;
     display: flex;
-    margin-top: 32px;
     border-top: 1px solid #dfdfdf;
     padding-top: 42px;
     padding-bottom: 70px;

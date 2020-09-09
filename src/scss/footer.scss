@@ -11,22 +11,12 @@
     padding: 0 20px;
     max-width: 1254px;
     margin: 0 auto;
-    // display: grid;
-    // gap: 80px;
-    // grid-template-columns: minmax(174px, 1fr) minmax(702px, 1fr) minmax(
-    //     251px,
-    //     1fr
-    //   );
     display: flex;
     justify-content: space-between;
 
     @media screen and(max-width: $breakpoint-up-xl) {
       width: 100%;
       max-width: 100%;
-      //   grid-template-columns: minmax(174px, 1fr) minmax(678px, 1fr) minmax(
-      //       118px,
-      //       1fr
-      //     );
     }
   }
 
