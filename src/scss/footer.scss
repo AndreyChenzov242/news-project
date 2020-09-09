@@ -58,6 +58,12 @@
     @media screen and(max-width:$breakpoint-up-xl) {
       font-size: 16px;
       line-height: 1.5;
+      max-width: 650px;
+    }
+
+    @media screen and(max-width:$breakpoint-up-md) {
+      font-size: 14px;
+      max-width: 550px;
     }
 
     .cookie {
@@ -98,6 +104,10 @@
       line-height: 1.84;
       text-transform: uppercase;
       color: #ffffff;
+
+      @media screen and(max-width:$breakpoint-up-md) {
+        margin-right: 20px;
+      }
     }
   }
 }
