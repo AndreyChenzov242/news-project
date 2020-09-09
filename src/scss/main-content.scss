@@ -138,6 +138,18 @@
             height: 560px;
           }
 
+          @media screen and(max-width:$breakpoint-up-xs) {
+            height: 430px;
+          }
+
+          @media screen and(max-width:$breakpoint-up-xxs) {
+            height: 325px;
+          }
+
+          @media screen and(max-width:$breakpoint-up-xxxs) {
+            height: 220px;
+          }
+
           img {
             width: 100%;
             height: 100%;
@@ -169,6 +181,22 @@
               max-width: 100%;
               top: 85%;
             }
+
+            @media screen and(max-width:$breakpoint-up-xs) {
+              max-width: 455px;
+              top: 80%;
+              font-size: 24px;
+            }
+
+            @media screen and(max-width:$breakpoint-up-xxs) {
+              top: 70%;
+            }
+
+            @media screen and(max-width:$breakpoint-up-xxxs) {
+              font-size: 20px;
+              top: 55%;
+              max-width: 300px;
+            }
           }
         }
 
@@ -183,8 +211,26 @@
             top: 15px;
           }
 
+          @media screen and(max-width:$breakpoint-up-xs) {
+            left: auto;
+            right: 20px;
+            top: 20px;
+          }
+
+          @media screen and(max-width:$breakpoint-up-xxxs) {
+            top: 10px;
+            right: 15px;
+          }
+
           li {
             margin: 0 1px;
+
+            @media screen and(max-width:$breakpoint-up-xxxs) {
+              padding: 0;
+              width: 11px;
+              height: 11px;
+              margin: 0 2px;
+            }
           }
 
           button::before {
@@ -195,6 +241,12 @@
             border-radius: 50%;
             border: 3px solid #ffffff;
             opacity: 1;
+
+            @media screen and(max-width:$breakpoint-up-xxxs) {
+              width: 11px;
+              height: 11px;
+              border: 2px solid #ffffff;
+            }
           }
 
           .slick-active {
@@ -208,6 +260,7 @@
 
     .main__publications {
       grid-area: publications;
+      padding-bottom: 24px;
 
       .publications {
         &__title-wrapper {
@@ -241,6 +294,10 @@
           @media screen and(max-width:$breakpoint-up-md) {
             gap: 20px;
             grid-template-columns: 1fr 1fr 1fr;
+          }
+
+          @media screen and(max-width:$breakpoint-up-xs) {
+            grid-template-columns: 1fr;
           }
         }
 
@@ -291,6 +348,11 @@
 
       @media screen and(max-width:$breakpoint-up-md) {
         display: flex;
+
+        @media screen and(max-width:$breakpoint-up-xxs) {
+          flex-direction: column;
+          padding-bottom: 24px;
+        }
       }
 
       .special-projects {
@@ -299,15 +361,27 @@
             width: 100%;
           }
 
+          @media screen and(max-width:$breakpoint-up-xxs) {
+            padding: 0;
+          }
+
           &--left {
             @media screen and(max-width:$breakpoint-up-md) {
               padding-right: 10px;
+            }
+
+            @media screen and(max-width:$breakpoint-up-xxs) {
+              padding: 0;
             }
           }
 
           &--right {
             @media screen and(max-width:$breakpoint-up-md) {
               padding-left: 10px;
+            }
+
+            @media screen and(max-width:$breakpoint-up-xxs) {
+              padding: 0;
             }
           }
         }
@@ -380,6 +454,10 @@
             @media screen and(max-width:$breakpoint-up-xs) {
               font-size: 14px;
               line-height: 1.5;
+            }
+
+            @media screen and(max-width:$breakpoint-up-xxs) {
+              max-width: 100%;
             }
           }
 
@@ -661,6 +739,10 @@
       padding-bottom: 20px;
     }
 
+    @media screen and(max-width:$breakpoint-up-xxs) {
+      flex-direction: column;
+    }
+
     .video {
       &-wrapper {
         position: relative;
@@ -722,6 +804,10 @@
 
         @media screen and(max-width:$breakpoint-up-xs) {
           font-size: 18px;
+        }
+
+        @media screen and(max-width:$breakpoint-up-xxs) {
+          margin-bottom: 20px;
         }
       }
 
@@ -791,6 +877,11 @@
             @media screen and(max-width:$breakpoint-up-xs) {
               font-size: 14px;
               max-width: 235px;
+              width: 100%;
+            }
+
+            @media screen and(max-width:$breakpoint-up-xxs) {
+              max-width: 80%;
             }
           }
         }

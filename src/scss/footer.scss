@@ -150,7 +150,7 @@
 
     @media screen and(max-width:$breakpoint-up-xs) {
       flex-direction: column;
-      margin: 12px 0;
+      margin: 12px 0 8px 0;
     }
 
     .link {
@@ -170,6 +170,11 @@
 
       @media screen and(max-width:$breakpoint-up-sm) {
         margin-right: 10px;
+      }
+
+      @media screen and(max-width:$breakpoint-up-xs) {
+        margin-right: 0;
+        margin-bottom: 4px;
       }
     }
   }

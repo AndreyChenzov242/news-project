@@ -12,6 +12,10 @@
   @media screen and(max-width:$breakpoint-up-md) {
     max-width: 100%;
   }
+
+  @media screen and(max-width:$breakpoint-up-xs) {
+    padding: 10px;
+  }
 }
 
 .title {
