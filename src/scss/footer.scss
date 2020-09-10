@@ -117,10 +117,11 @@
       margin-bottom: 12px;
     }
 
-    svg {
+    a {
       cursor: pointer;
       margin-bottom: 15px;
       margin: 0 4px;
+      transition: opacity 0.3s;
 
       @media screen and(max-width: $breakpoint-up-xl) {
         margin: 0 2px;
@@ -135,6 +136,10 @@
       @media screen and(max-width: $breakpoint-up-xs) {
         margin: 0 2px;
         margin-bottom: 5px;
+      }
+
+      &:hover {
+        opacity: 0.5;
       }
     }
   }

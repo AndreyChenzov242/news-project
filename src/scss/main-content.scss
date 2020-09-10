@@ -20,8 +20,8 @@
     grid-template-rows: max-content;
 
     @media screen and(max-width:$breakpoint-up-xxl) {
-      grid-template-columns: minmax(300px, 1fr) minmax(530px, 1.2fr) minmax(
-          300px,
+      grid-template-columns: minmax(290px, 1fr) minmax(530px, 1.3fr) minmax(
+          290px,
           1fr
         );
 
@@ -29,17 +29,12 @@
     }
 
     @media screen and(max-width:$breakpoint-up-xl) {
-      grid-template-columns: minmax(300px, 1fr) minmax(530px, 1fr) minmax(
-          300px,
-          1fr
-        );
-
       gap: 20px;
     }
 
     @media screen and(max-width:$breakpoint-up-lg) {
-      grid-template-columns: minmax(250px, 1fr) minmax(430px, 1fr) minmax(
-          250px,
+      grid-template-columns: minmax(240px, 1fr) minmax(430px, 1.5fr) minmax(
+          240px,
           1fr
         );
 
@@ -66,7 +61,7 @@
       }
 
       &__card-wrapper {
-        padding-top: 18px;
+        padding-top: 15px;
         border-top: 1px solid #dfdfdf;
         margin-bottom: 20px;
 
@@ -78,21 +73,33 @@
           }
 
           &__img-wrapper {
-            width: 91px;
+            max-width: 91px;
+            width: 100%;
             height: 58px;
-            float: left;
             margin-right: 8px;
+            overflow: hidden;
+
+            &:hover + .card__title {
+              text-decoration: underline;
+            }
           }
 
           &__img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: width 0.3s, height 0.3s;
+
+            &:hover {
+              width: 120%;
+              height: 120%;
+            }
           }
 
           &__title {
             font-size: 18px;
             line-height: 1.16;
+            width: 100%;
 
             @media screen and(max-width:$breakpoint-up-xl) {
               font-size: 16px;
@@ -404,6 +411,7 @@
           }
         }
       }
+
       .editor {
         margin-top: 30px;
         padding: 0 12px;
@@ -474,6 +482,21 @@
               margin-left: 15px;
             }
 
+            @media screen and(max-width:$breakpoint-up-md) {
+              width: 30%;
+              height: auto;
+            }
+
+            @media screen and(max-width:$breakpoint-up-xs) {
+              width: 40%;
+              height: auto;
+            }
+
+            @media screen and(max-width:$breakpoint-up-xxs) {
+              width: 30%;
+              height: auto;
+            }
+
             img {
               width: 100%;
               height: 100%;
@@ -538,14 +561,21 @@
           margin-left: 38px;
 
           @media screen and(max-width:$breakpoint-up-xl) {
-            width: 80px;
-            height: 80px;
+            width: 30%;
+            height: 30%;
             margin-left: 10px;
           }
 
-          @media screen and(max-width:$breakpoint-up-lg) {
-            width: 65px;
-            height: 65px;
+          @media screen and(max-width:$breakpoint-up-md) {
+            width: 25%;
+            height: 25%;
+            margin-left: 30px;
+          }
+
+          @media screen and(max-width:$breakpoint-up-xs) {
+            width: 30%;
+            height: 30%;
+            margin-left: 10px;
           }
 
           img {
@@ -764,6 +794,7 @@
         font-size: 26px;
         line-height: 1.15;
         padding-left: 20px;
+        margin-left: 8px;
         color: #92969e;
         position: absolute;
         background-color: #fff;
@@ -777,9 +808,53 @@
         position: relative;
         width: 100%;
         padding-top: 56.25%;
+        overflow: hidden;
 
-        iframe {
+        &::before {
+          content: "";
+          display: block;
+          width: 119px;
+          height: 119px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          background-image: url("../assets/svg/play-big.svg");
+          z-index: 10;
+          background-size: 100%;
+
+          @media screen and(max-width:$breakpoint-up-md) {
+            width: 80px;
+            height: 80px;
+          }
+
+          @media screen and(max-width:$breakpoint-up-xs) {
+            width: 60px;
+            height: 60px;
+          }
+        }
+
+        &:after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0%;
+          top: 0%;
+          background-color: rgba(8, 120, 247, 0.9);
+          z-index: 0;
+          opacity: 0;
+          transition: opacity 0.3s;
+        }
+
+        &:hover::after {
+          opacity: 1;
+        }
+
+        img {
           top: 0;
+          left: 0;
           width: 100%;
           height: 100%;
           position: absolute;
@@ -833,6 +908,54 @@
           &__video {
             width: 227px;
             height: 117px;
+            position: relative;
+
+            &::before {
+              content: "";
+              display: block;
+              width: 61px;
+              height: 61px;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              background-image: url("../assets/svg/play-small.svg");
+              z-index: 10;
+              background-size: 100%;
+
+              @media screen and(max-width:$breakpoint-up-lg) {
+                width: 56px;
+                height: 56px;
+              }
+
+              @media screen and(max-width:$breakpoint-up-md) {
+                width: 46px;
+                height: 46px;
+              }
+
+              @media screen and(max-width:$breakpoint-up-xs) {
+                width: 30px;
+                height: 30px;
+              }
+            }
+
+            &:after {
+              content: "";
+              display: block;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              left: 0%;
+              top: 0%;
+              background-color: rgba(8, 120, 247, 0.9);
+              z-index: 0;
+              opacity: 0;
+              transition: opacity 0.3s;
+            }
+
+            &:hover::after {
+              opacity: 1;
+            }
 
             @media screen and(max-width:$breakpoint-up-xl) {
               width: 170px;
@@ -849,9 +972,11 @@
               height: 50px;
             }
 
-            iframe {
+            img {
               width: 100%;
               height: 100%;
+              object-fit: cover;
+              position: relative;
             }
           }
 

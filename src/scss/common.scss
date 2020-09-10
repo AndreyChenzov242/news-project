@@ -145,6 +145,11 @@
 
     & > * {
       display: flex;
+      transition: opacity 0.15s;
+    }
+
+    & > *:hover {
+      opacity: 0.5;
     }
   }
 
@@ -240,4 +245,8 @@
 
 .d-flex {
   display: flex;
+}
+
+.d-block {
+  display: block;
 }

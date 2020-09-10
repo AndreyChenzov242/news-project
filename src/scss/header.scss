@@ -98,6 +98,15 @@
     background-color: #f0f0f0;
     padding: 8px;
     margin-left: auto;
+    margin-bottom: 2px;
+
+    @media screen and(max-width:$breakpoint-up-xl) {
+      margin-bottom: 10px;
+    }
+
+    @media screen and(max-width:$breakpoint-up-xs) {
+      margin-bottom: 0;
+    }
 
     @media screen and(max-width:$breakpoint-up-sm) {
       padding: 5px;
