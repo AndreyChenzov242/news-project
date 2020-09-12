@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/interview.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__content-wrapper">
+          <div class="header__logo-wrapper">
+            <a href="#" class="header__img-wrapper">
+              <img
+                class="header__logo-img"
+                src="../assets/img/logo.png"
+                alt="logo"
+              />
+            </a>
+
+            <div class="header__logo-text">TV Post</div>
+          </div>
+
+          <ul class="header__navbar sm-d-none">
+            <li class="navbar__item"><a href="news.html">новини</a></li>
+            <li class="navbar__item"><a href="text.html">статті</a></li>
+            <li class="navbar__item"><a href="interview.html">інтервєю</a></li>
+            <li class="navbar__item"><a href="#">репортажі</a></li>
+            <li class="navbar__item"><a href="#">блоги</a></li>
+          </ul>
+
+          <div class="header__search-and-smm xxs-d-none">
+            <form class="search-form">
+              <input
+                class="search-form__input-text"
+                type="text"
+                placeholder="Пошук"
+              />
+              <button>
+                <svg class="svg">
+                  <use xlink:href="../assets/svg/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+            <div class="social-wrapper sm-d-none">
+              <div class="social-wrapper__text">Підписатися:</div>
+              <div class="social-wrapper__links">
+                <a href="#">
+                  <svg class="svg">
+                    <use xlink:href="../assets/svg/sprite.svg#wifi"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg">
+                    <use xlink:href="../assets/svg/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg">
+                    <use xlink:href="../assets/svg/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg twitter">
+                    <use xlink:href="../assets/svg/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <svg class="svg header__search">
+            <use xlink:href="../assets/svg/sprite.svg#search"></use>
+          </svg>
+
+          <div class="hamburger header__hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+
+          <div class="sidebar">
+            <div class="sidebar__content-wrapper">
+              <div class="menu">
+                <div class="menu__title"><a href="#">Меню</a></div>
+                <div class="menu__item"><a href="#">новини</a></div>
+                <div class="menu__item"><a href="#">статті</a></div>
+                <div class="menu__item"><a href="#">інтервєю</a></div>
+                <div class="menu__item"><a href="#">репортажі</a></div>
+                <div class="menu__item"><a href="#">блоги</a></div>
+              </div>
+              <div class="special-projects">
+                <div class="title special-projects__title">спецпроекти</div>
+                <a href="#" class="special-projects__item red-circle"
+                  >Медіатек</a
+                >
+                <a href="#" class="special-projects__item red-circle"
+                  >Громадянське суспільство</a
+                >
+                <a href="#" class="special-projects__item red-circle">
+                  Правда і вимисел про короновірус
+                </a>
+                <a href="#" class="special-projects__item red-circle">
+                  Короновірус: моніторинг медіа
+                </a>
+                <a href="#" class="special-projects__item red-circle"
+                  >Партнерські проекти</a
+                >
+              </div>
+            </div>
+            <div class="sidebar__backdrop"></div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="header__special-projects">
+          <div class="header__special-projects-wrapper">
+            <div class="special-projects__text">спецпроекти</div>
+            <a href="#" class="special-projects__item red-circle sm-d-none"
+              >Медіатек</a
+            >
+            <a href="#" class="special-projects__item red-circle sm-d-none"
+              >Громадянське суспільство</a
+            >
+            <a href="#" class="special-projects__item red-circle sm-d-none">
+              Правда і вимисел про короновірус
+            </a>
+            <a href="#" class="special-projects__item red-circle lg-d-none">
+              Короновірус: моніторинг медіа
+            </a>
+            <a href="#" class="special-projects__item red-circle sm-d-none"
+              >Партнерські проекти</a
+            >
+
+            <div class="social-wrapper special-projects__social-wrapper">
+              <div class="social-wrapper__text">Підписатися:</div>
+              <div class="social-wrapper__links">
+                <a href="#">
+                  <svg class="svg">
+                    <use xlink:href="../assets/svg/sprite.svg#sm-wifi"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg">
+                    <use
+                      xlink:href="../assets/svg/sprite.svg#sm-facebook"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg">
+                    <use
+                      xlink:href="../assets/svg/sprite.svg#sm-telegram"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg twitter">
+                    <use xlink:href="../assets/svg/sprite.svg#sm-twitter"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line line--grey"></div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="content-wrapper">
+          <div class="title interview__title">Інтерв’ю</div>
+          <div class="interview-cards-wrapper">
+            <div class="interview-card">
+              <div class="interview-card__img-wrapper">
+                <img src="../assets/img/interview-6.png" alt="interview" />
+              </div>
+              <div class="date">26 липня, 19:30</div>
+              <a class="interview-card__title" href="#">
+                «У мене була мрія — будувати масове житло, яким можна пишатися».
+              </a>
+              <div class="interview-card__name partner-material">
+                Інна Малкова
+              </div>
+            </div>
+
+            <div class="interview-card">
+              <div class="interview-card__img-wrapper">
+                <img src="../assets/img/interview-5.png" alt="interview" />
+              </div>
+              <div class="date">26 липня, 19:30</div>
+              <a class="interview-card__title" href="#">
+                «У другому півріччі очікуємо зростання економіки». Інтерв'ю з
+                прем'єр-міністром України Денисом Шмигалем
+              </a>
+              <div class="interview-card__name">Інна Малкова</div>
+            </div>
+
+            <div class="interview-card">
+              <div class="interview-card__img-wrapper">
+                <img src="../assets/img/interview-4.png" alt="interview" />
+              </div>
+              <div class="date">26 липня, 19:30</div>
+              <a class="interview-card__title" href="#">
+                «У мене була мрія — будувати масове житло, яким можна пишатися».
+              </a>
+              <div class="interview-card__name">Інна Малкова</div>
+            </div>
+
+            <div class="interview-card">
+              <div class="interview-card__img-wrapper">
+                <img src="../assets/img/interview-3.png" alt="interview" />
+              </div>
+              <div class="date">26 липня, 19:30</div>
+              <a class="interview-card__title" href="#">
+                «У мене була мрія — будувати масове житло, яким можна пишатися».
+              </a>
+              <div class="interview-card__name partner-material">
+                Інна Малкова
+              </div>
+            </div>
+
+            <div class="interview-card">
+              <div class="interview-card__img-wrapper">
+                <img src="../assets/img/interview-2.png" alt="interview" />
+              </div>
+              <div class="date">26 липня, 19:30</div>
+              <a class="interview-card__title" href="#">
+                «У мене була мрія — будувати масове житло, яким можна пишатися».
+              </a>
+              <div class="interview-card__name">Інна Малкова</div>
+            </div>
+
+            <div class="interview-card">
+              <div class="interview-card__img-wrapper">
+                <img src="../assets/img/interview-1.png" alt="interview" />
+              </div>
+              <div class="date">26 липня, 19:30</div>
+              <a class="interview-card__title" href="#">
+                «У мене була мрія — будувати масове житло, яким можна пишатися».
+              </a>
+              <div class="interview-card__name">Інна Малкова</div>
+            </div>
+
+            <div class="interview-card">
+              <div class="interview-card__img-wrapper">
+                <img src="../assets/img/interview-6.png" alt="interview" />
+              </div>
+              <div class="date">26 липня, 19:30</div>
+              <a class="interview-card__title" href="#">
+                «У мене була мрія — будувати масове житло, яким можна пишатися».
+              </a>
+              <div class="interview-card__name partner-material">
+                Інна Малкова
+              </div>
+            </div>
+
+            <div class="interview-card">
+              <div class="interview-card__img-wrapper">
+                <img src="../assets/img/interview-5.png" alt="interview" />
+              </div>
+              <div class="date">26 липня, 19:30</div>
+              <a class="interview-card__title" href="#">
+                «У мене була мрія — будувати масове житло, яким можна пишатися».
+              </a>
+              <div class="interview-card__name">Інна Малкова</div>
+            </div>
+
+            <div class="interview-card">
+              <div class="interview-card__img-wrapper">
+                <img src="../assets/img/interview-4.png" alt="interview" />
+              </div>
+              <div class="date">26 липня, 19:30</div>
+              <a class="interview-card__title" href="#">
+                «У мене була мрія — будувати масове житло, яким можна пишатися».
+              </a>
+              <div class="interview-card__name">Інна Малкова</div>
+            </div>
+
+            <div class="interview-card">
+              <div class="interview-card__img-wrapper">
+                <img src="../assets/img/interview-3.png" alt="interview" />
+              </div>
+              <div class="date">26 липня, 19:30</div>
+              <a class="interview-card__title" href="#">
+                «У мене була мрія — будувати масове житло, яким можна пишатися».
+              </a>
+              <div class="interview-card__name partner-material">
+                Інна Малкова
+              </div>
+            </div>
+
+            <div class="interview-card">
+              <div class="interview-card__img-wrapper">
+                <img src="../assets/img/interview-2.png" alt="interview" />
+              </div>
+              <div class="date">26 липня, 19:30</div>
+              <a class="interview-card__title" href="#">
+                «У мене була мрія — будувати масове житло, яким можна пишатися».
+              </a>
+              <div class="interview-card__name">Інна Малкова</div>
+            </div>
+
+            <div class="interview-card">
+              <div class="interview-card__img-wrapper">
+                <img src="../assets/img/interview-1.png" alt="interview" />
+              </div>
+              <div class="date">26 липня, 19:30</div>
+              <a class="interview-card__title" href="#">
+                «У мене була мрія — будувати масове житло, яким можна пишатися».
+              </a>
+              <div class="interview-card__name">Інна Малкова</div>
+            </div>
+          </div>
+
+          <nav data-pagination class="content-container__page-counter">
+            <a href="#">&#706;</a>
+            <ul>
+              <li><a class="pages" href="#1">1</a></li>
+              <li class="current"><a class="pages" href="#2">2</a></li>
+              <li><a class="pages" href="#3">3</a></li>
+              <li><a class="pages" href="#4">4</a></li>
+              <li><a class="pages xs-d-none" href="#10">…</a></li>
+              <li><a class="pages xs-d-none" href="#26">26</a></li>
+            </ul>
+
+            <a href="#2">&#707;</a>
+          </nav>
+        </div>
+        <div class="main__news news lg-d-none">
+          <div class="title news__title rect">останні новини</div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img1.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img2.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Як Дарницька ТЕЦ проходить екоперевірку
+              </a>
+            </div>
+            <div class="card__date date company-news">31 липня, 19:30</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img3.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <a class="card__title" href="#">
+              Київ у заторах: ситуація станом на вечір 31 липня
+            </a>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img1.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img2.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Як Дарницька ТЕЦ проходить екоперевірку
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 19:30</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img3.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <a class="card__title" href="#">
+              Київ у заторах: ситуація станом на вечір 31 липня
+            </a>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img1.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img2.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Як Дарницька ТЕЦ проходить екоперевірку
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 19:30</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img3.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <a class="card__title" href="#">
+              Київ у заторах: ситуація станом на вечір 31 липня
+            </a>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img1.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img3.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <a class="card__title" href="#">
+              Київ у заторах: ситуація станом на вечір 31 липня
+            </a>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img1.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img3.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-wrapper">
+          <div class="footer__logo-wrapper">
+            <a class="logo__title" href="#">logo</a>
+            <div class="logo__circle">18+</div>
+          </div>
+          <div class="footer__content-wrapper">
+            <p>
+              2020 The Village Україна. 2017 The Village Україна. Новини твого
+              міста Люди, місця, події, новини, України
+            </p>
+            <p>Прогноз погоди наданий OpenWeatherMap</p>
+            <div class="footer__links-wrapper">
+              <a class="link" href="#">про сайт</a>
+              <a class="link" href="#">контакти</a>
+              <a class="link" href="#">Рекламодавцям</a>
+              <a class="link" href="#">Для Користувачів</a>
+              <a class="link" href="#">Вакансії</a>
+            </div>
+            <p>
+              Ми використовуваємо cookie, для того щоб збирати статистику та
+              робити котент цікавішим. Також cookie використовується задля
+              відоюраження найбільш релевантної реклами. Ви можете детальніше
+              почитати про <a href="#" class="cookie">cookie-файли</a> та
+              змінити налаштування вашого брузера
+            </p>
+          </div>
+          <div class="footer__social-wrapper">
+            <a href="#">
+              <svg class="footer-svg">
+                <use xlink:href="../assets/svg/sprite.svg#footer-twitter"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="footer-svg">
+                <use xlink:href="../assets/svg/sprite.svg#footer-google"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="footer-svg">
+                <use
+                  xlink:href="../assets/svg/sprite.svg#footer-telegram"
+                ></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="footer-svg">
+                <use xlink:href="../assets/svg/sprite.svg#footer-wifi"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="footer-svg">
+                <use
+                  xlink:href="../assets/svg/sprite.svg#footer-facebook"
+                ></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="footer-svg">
+                <use xlink:href="../assets/svg/sprite.svg#footer-inst"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https:/cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="../js/toggleHamburger.js"></script>
+  </body>
+</html>
