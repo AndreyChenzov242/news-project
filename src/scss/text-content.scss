@@ -3,8 +3,8 @@
 @import "./configs";
 
 .main {
-  margin-top: 20px;
-  margin-bottom: 70px;
+  padding-top: 20px;
+  padding-bottom: 70px;
 
   display: grid;
   grid-gap: 38px;
@@ -21,6 +21,10 @@
     grid-template-columns: 100%;
     grid-gap: 0;
     gap: 0;
+  }
+
+  @media screen and(max-width:$breakpoint-up-xxs) {
+    padding-bottom: 50px;
   }
 
   &__article {
@@ -350,9 +354,21 @@
         color: #c4c4c4;
         margin-bottom: 30px;
         display: block;
+        position: relative;
 
         @media screen and(max-width:$breakpoint-up-xs) {
           margin-bottom: 20px;
+        }
+
+        &::after {
+          content: "";
+          border: solid;
+          border-width: 0 1px 1px 0;
+          display: inline-block;
+          padding: 3px;
+          transform: rotate(45deg) translateY(-5px);
+          -webkit-transform: rotate(45deg) translateY(-5px);
+          margin-left: 10px;
         }
       }
     }
