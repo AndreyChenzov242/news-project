@@ -1,9 +1,0 @@
-.main__content-wrapper {
-  display: grid;
-  gap: 40px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px;
-}
-.main__content-wrapper .col {
-  background-color: rosybrown;
-}

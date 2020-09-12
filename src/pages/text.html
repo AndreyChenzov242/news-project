@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/text.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__content-wrapper">
+          <div class="header__logo-wrapper">
+            <a href="#" class="header__img-wrapper">
+              <img
+                class="header__logo-img"
+                src="../assets/img/logo.png"
+                alt="logo"
+              />
+            </a>
+
+            <div class="header__logo-text">TV Post</div>
+          </div>
+
+          <ul class="header__navbar sm-d-none">
+            <li class="navbar__item"><a href="#">новини</a></li>
+            <li class="navbar__item"><a href="#">статті</a></li>
+            <li class="navbar__item"><a href="#">інтервєю</a></li>
+            <li class="navbar__item"><a href="#">репортажі</a></li>
+            <li class="navbar__item"><a href="#">блоги</a></li>
+          </ul>
+
+          <div class="header__search-and-smm xxs-d-none">
+            <form class="search-form">
+              <input
+                class="search-form__input-text"
+                type="text"
+                placeholder="Пошук"
+              />
+              <button>
+                <svg class="svg">
+                  <use xlink:href="../assets/svg/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+            <div class="social-wrapper sm-d-none">
+              <div class="social-wrapper__text">Підписатися:</div>
+              <div class="social-wrapper__links">
+                <a href="#">
+                  <svg class="svg">
+                    <use xlink:href="../assets/svg/sprite.svg#wifi"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg">
+                    <use xlink:href="../assets/svg/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg">
+                    <use xlink:href="../assets/svg/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg twitter">
+                    <use xlink:href="../assets/svg/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <svg class="svg header__search">
+            <use xlink:href="../assets/svg/sprite.svg#search"></use>
+          </svg>
+
+          <div class="hamburger header__hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+
+          <div class="sidebar">
+            <div class="sidebar__content-wrapper">
+              <div class="menu">
+                <div class="menu__title"><a href="#">Меню</a></div>
+                <div class="menu__item"><a href="#">новини</a></div>
+                <div class="menu__item"><a href="#">статті</a></div>
+                <div class="menu__item"><a href="#">інтервєю</a></div>
+                <div class="menu__item"><a href="#">репортажі</a></div>
+                <div class="menu__item"><a href="#">блоги</a></div>
+              </div>
+              <div class="special-projects">
+                <div class="title special-projects__title">спецпроекти</div>
+                <a href="#" class="special-projects__item red-circle"
+                  >Медіатек</a
+                >
+                <a href="#" class="special-projects__item red-circle"
+                  >Громадянське суспільство</a
+                >
+                <a href="#" class="special-projects__item red-circle">
+                  Правда і вимисел про короновірус
+                </a>
+                <a href="#" class="special-projects__item red-circle">
+                  Короновірус: моніторинг медіа
+                </a>
+                <a href="#" class="special-projects__item red-circle"
+                  >Партнерські проекти</a
+                >
+              </div>
+            </div>
+            <div class="sidebar__backdrop"></div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="header__special-projects">
+          <div class="header__special-projects-wrapper">
+            <div class="special-projects__text">спецпроекти</div>
+            <a href="#" class="special-projects__item red-circle sm-d-none"
+              >Медіатек</a
+            >
+            <a href="#" class="special-projects__item red-circle sm-d-none"
+              >Громадянське суспільство</a
+            >
+            <a href="#" class="special-projects__item red-circle sm-d-none">
+              Правда і вимисел про короновірус
+            </a>
+            <a href="#" class="special-projects__item red-circle lg-d-none">
+              Короновірус: моніторинг медіа
+            </a>
+            <a href="#" class="special-projects__item red-circle sm-d-none"
+              >Партнерські проекти</a
+            >
+
+            <div class="social-wrapper special-projects__social-wrapper">
+              <div class="social-wrapper__text">Підписатися:</div>
+              <div class="social-wrapper__links">
+                <a href="#">
+                  <svg class="svg">
+                    <use xlink:href="../assets/svg/sprite.svg#sm-wifi"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg">
+                    <use
+                      xlink:href="../assets/svg/sprite.svg#sm-facebook"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg">
+                    <use
+                      xlink:href="../assets/svg/sprite.svg#sm-telegram"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg twitter">
+                    <use xlink:href="../assets/svg/sprite.svg#sm-twitter"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line line--grey"></div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="main__article article">
+          <div class="article__img-wrapper">
+            <img src="../assets/img/text-main.jpg" alt="article image" />
+          </div>
+          <div class="article__title article__text">
+            У столиці три природні території стануть заповідниками. Та що про це
+            думають люди?
+          </div>
+          <div class="article__wrapper">
+            <div class="atricle__date">31 липня, 19:30</div>
+
+            <div class="social-wrapper">
+              <div class="social-wrapper__text">Підписатися:</div>
+              <div class="social-wrapper__links">
+                <a href="#">
+                  <svg class="svg">
+                    <use xlink:href="../assets/svg/sprite.svg#wifi"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg">
+                    <use xlink:href="../assets/svg/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg">
+                    <use xlink:href="../assets/svg/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg twitter">
+                    <use xlink:href="../assets/svg/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <h1 class="article__h1 article__text mb-10 mt-30 xxs-mt-15">
+            Заголовок 1
+          </h1>
+          <h2 class="article__h2 article__text mb-10">Заголовок 2</h2>
+          <h3 class="article__h3 article__text mb-10">Заголовок 3</h3>
+          <h4 class="article__h4 article__text mb-10">Заголовок 4</h4>
+          <h5 class="article__h5 article__text mb-15">Заголовок 5</h5>
+          <p class="article__p article__text mb-30 xxs-mb-20">
+            Значимость этих проблем настолько очевидна, что дальнейшее развитие
+            различных форм деятельности требуют от нас анализа позиций,
+            занимаемых участниками в отношении поставленных задач. Повседневная
+            практика показывает, что консультация с широким активом способствует
+            подготовки и реализации соответствующий условий активизации.
+            Товарищи! начало повседневной работы по формированию позиции требуют
+            от нас анализа дальнейших направлений развития.
+          </p>
+          <h2 class="article__h2 article__text mb-15">Заголовок 2</h2>
+
+          <ul class="article__ul">
+            <li>
+              <p class="article__p article__text">
+                Значимость этих проблем настолько очевидна, что дальнейшее
+                развитие различных форм деятельности требуют от нас анализа
+                позиций, занимаемых участниками в отношении поставленных задач;
+              </p>
+            </li>
+            <li>
+              <p class="article__p article__text">
+                Повседневная практика показывает, что консультация с широким;
+              </p>
+            </li>
+            <li>
+              <p class="article__p article__text">
+                Активом способствует подготовки и реализации соответствующий
+                условий активизации;
+              </p>
+            </li>
+            <li>
+              <p class="article__p article__text">
+                Товарищи! начало повседневной работы по формированию позиции
+                требуют от нас анализа дальнейших направлений развития.
+              </p>
+            </li>
+          </ul>
+
+          <div class="article__headline-wrapper">
+            <h3 class="article__h3 mb-10 article__text d-none xxs-d-block">
+              Заголовок 3
+            </h3>
+            <div class="img-wrapper">
+              <img src="../assets/img/h3-img.png" alt="img" />
+            </div>
+            <div class="text-wrapper">
+              <h3 class="article__h3 mb-15 article__text xxs-d-none">
+                Заголовок 3
+              </h3>
+              <p class="article__p article__text">
+                С другой стороны рамки и место обучения кадров способствует
+                подготовки и реализации позиций, занимаемых участниками в
+                отношении поставленных задач. Товарищи! постоянное
+                информационно-пропагандистское обеспечение нашей деятельности в
+                значительной степени обуславливает создание дальнейших
+                направлений развития. Таким образом укрепление и развитие
+                структуры требуют определения и уточнения дальнейших направлений
+                развития. Товарищи! реализация намеченных плановых заданий
+                обеспечивает широкому кругу участие в формировании существенных
+                финансовых и административных условий.
+              </p>
+            </div>
+          </div>
+
+          <div class="article__blockquote">
+            <p class="article__p article__text mb-10">
+              В моей старой голове две, от силы три мысли, но они временами
+              поднимают такую возню, что кажется, их тысячи.
+            </p>
+            <div class="line line--red mb-10"></div>
+            <div class="author">Фаина Раневская</div>
+          </div>
+
+          <h4 class="article__h4 article__text">Заголовок 4</h4>
+          <ol class="article__ol mb-10">
+            <li>
+              <p class="article__p article__text">
+                Значимость этих проблем настолько очевидна, что дальнейшее
+                развитие различных форм деятельности требуют от нас анализа
+                позиций, занимаемых участниками в отношении поставленных задач;
+              </p>
+            </li>
+            <li>
+              <p class="article__p article__text">
+                Повседневная практика показывает, что консультация с широким;
+              </p>
+            </li>
+            <li>
+              <p class="article__p article__text">
+                Активом способствует подготовки и реализации соответствующий
+                условий активизации;
+              </p>
+            </li>
+            <li>
+              <p class="article__p article__text">
+                Товарищи! начало повседневной работы по формированию позиции
+                требуют от нас анализа дальнейших направлений развития.
+              </p>
+            </li>
+          </ol>
+
+          <p class="article__p article__text mb-10">
+            Значимость этих проблем настолько очевидна, что дальнейшее развитие
+            различных форм деятельности требуют от нас анализа позиций,
+            занимаемых участниками в отношении поставленных задач. Повседневная
+            практика показывает, что консультация с широким.
+          </p>
+          <p class="article__p article__text mb-30">
+            Активом способствует подготовки и реализации соответствующий условий
+            активизации. Товарищи! начало повседневной работы по формированию
+            позиции требуют от нас анализа дальнейших направлений развития.
+          </p>
+
+          <div class="line line--wide"></div>
+          <div class="article__submit-and-social-wrapper">
+            <div class="submit">
+              <div class="submit__title-wrapper">
+                <img
+                  class="submit__img"
+                  src="../assets/img/letter.png"
+                  alt="letter"
+                />
+                <div class="submit__title">Підписатися на розсилку:</div>
+              </div>
+              <input
+                class="submit__input"
+                type="text"
+                placeholder="Введіть e-mail ..."
+              />
+            </div>
+            <div class="line line--wide xs-d-block d-none"></div>
+            <div class="social-networks">
+              <div class="social-networks__title">
+                <div class="social-networks__sharing">
+                  <img src="../assets/img/sharing 1.png" alt="sharing" />
+                </div>
+                <div class="social-networks__text">
+                  Слідкуй за нами в соц. мережах
+                </div>
+              </div>
+              <div class="social-networks__links">
+                <a href="#"
+                  ><img src="../assets/img/FB_ic (1).png" alt="facebobok"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="../assets/img/instagram-sketched 1.png"
+                    alt="instagram"
+                /></a>
+                <a href="#"
+                  ><img src="../assets/img/Telegrm_ic.png" alt="Telegrm"
+                /></a>
+                <a href="#"
+                  ><img src="../assets/img/youtube(1) 1.png" alt="youtube"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <!-- plugin from facebook -->
+          <img class="mb-30" src="../assets/img/comment.png" alt="comment" />
+
+          <div class="line line--lite-grey mb-40"></div>
+
+          <div class="article__read-more article__text">Читайте також:</div>
+
+          <div class="atricle__date mb-10">31 липня, 19:30</div>
+          <a class="read-more__title article__text" href="#">
+            Раптово: Київ потрапив у “зелену” зону карантину Раптово: Київ
+            потрапив у “зелену” зону карантину Раптово: Київ потрапив у “зелену”
+            зону карантину Раптово
+          </a>
+          <div class="read-more__subtitle article__text xl-d-none">
+            Значимость этих проблем настолько очевидна, что дальнейшее развитие
+            различных ...
+          </div>
+          <a class="read-more__more" href="#">Подробнее</a>
+          <div class="line line--lite-grey line--thin mb-30 xs-mb-20"></div>
+
+          <div class="atricle__date mb-10">31 липня, 19:30</div>
+          <a class="read-more__title article__text" href="#">
+            Раптово: Київ потрапив у “зелену” зону карантину Раптово: Київ
+            потрапив у “зелену” зону карантину Раптово: Київ потрапив у “зелену”
+            зону карантину Раптово
+          </a>
+          <div class="read-more__subtitle article__text xl-d-none">
+            Значимость этих проблем настолько очевидна, что дальнейшее развитие
+            различных ...
+          </div>
+          <a class="read-more__more" href="#">Подробнее</a>
+          <div class="line line--lite-grey line--thin mb-30 xs-mb-20"></div>
+
+          <div class="atricle__date mb-10">31 липня, 19:30</div>
+          <a class="read-more__title article__text" href="#">
+            Раптово: Київ потрапив у “зелену” зону карантину Раптово: Київ
+            потрапив у “зелену” зону карантину Раптово: Київ потрапив у “зелену”
+            зону карантину Раптово
+          </a>
+          <div class="read-more__subtitle article__text xl-d-none">
+            Значимость этих проблем настолько очевидна, что дальнейшее развитие
+            различных ...
+          </div>
+          <a class="read-more__more" href="#">Подробнее</a>
+        </div>
+
+        <div class="main__news news lg-d-none">
+          <div class="title news__title rect">останні новини</div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img1.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img2.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Як Дарницька ТЕЦ проходить екоперевірку
+              </a>
+            </div>
+            <div class="card__date date company-news">31 липня, 19:30</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img3.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <a class="card__title" href="#">
+              Київ у заторах: ситуація станом на вечір 31 липня
+            </a>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img1.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img2.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Як Дарницька ТЕЦ проходить екоперевірку
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 19:30</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img3.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <a class="card__title" href="#">
+              Київ у заторах: ситуація станом на вечір 31 липня
+            </a>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img1.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img2.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Як Дарницька ТЕЦ проходить екоперевірку
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 19:30</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img3.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <a class="card__title" href="#">
+              Київ у заторах: ситуація станом на вечір 31 липня
+            </a>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img1.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img2.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Як Дарницька ТЕЦ проходить екоперевірку
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 19:30</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img3.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <a class="card__title" href="#">
+              Київ у заторах: ситуація станом на вечір 31 липня
+            </a>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img1.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img2.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Як Дарницька ТЕЦ проходить екоперевірку
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 19:30</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img3.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <a class="card__title" href="#">
+              Київ у заторах: ситуація станом на вечір 31 липня
+            </a>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img1.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img2.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Як Дарницька ТЕЦ проходить екоперевірку
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 19:30</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img3.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <a class="card__title" href="#">
+              Київ у заторах: ситуація станом на вечір 31 липня
+            </a>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img1.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img2.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Як Дарницька ТЕЦ проходить екоперевірку
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 19:30</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img3.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <a class="card__title" href="#">
+              Київ у заторах: ситуація станом на вечір 31 липня
+            </a>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img1.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img2.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Як Дарницька ТЕЦ проходить екоперевірку
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 19:30</div>
+          </div>
+
+          <div class="news__card-wrapper">
+            <div class="card__content-wrapper">
+              <a class="card__img-wrapper" href="#">
+                <img
+                  class="card__img"
+                  src="../assets/img/news-img3.png"
+                  alt="news image"
+                />
+              </a>
+              <a class="card__title" href="#">
+                Раптово: Київ потрапив у “зелену” зону карантину
+              </a>
+            </div>
+            <div class="card__date date">31 липня, 21:40</div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-wrapper">
+          <div class="footer__logo-wrapper">
+            <a class="logo__title" href="#">logo</a>
+            <div class="logo__circle">18+</div>
+          </div>
+          <div class="footer__content-wrapper">
+            <p>
+              2020 The Village Україна. 2017 The Village Україна. Новини твого
+              міста Люди, місця, події, новини, України
+            </p>
+            <p>Прогноз погоди наданий OpenWeatherMap</p>
+            <div class="footer__links-wrapper">
+              <a class="link" href="#">про сайт</a>
+              <a class="link" href="#">контакти</a>
+              <a class="link" href="#">Рекламодавцям</a>
+              <a class="link" href="#">Для Користувачів</a>
+              <a class="link" href="#">Вакансії</a>
+            </div>
+            <p>
+              Ми використовуваємо cookie, для того щоб збирати статистику та
+              робити котент цікавішим. Також cookie використовується задля
+              відоюраження найбільш релевантної реклами. Ви можете детальніше
+              почитати про <a href="#" class="cookie">cookie-файли</a> та
+              змінити налаштування вашого брузера
+            </p>
+          </div>
+          <div class="footer__social-wrapper">
+            <a href="#">
+              <svg class="footer-svg">
+                <use xlink:href="../assets/svg/sprite.svg#footer-twitter"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="footer-svg">
+                <use xlink:href="../assets/svg/sprite.svg#footer-google"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="footer-svg">
+                <use
+                  xlink:href="../assets/svg/sprite.svg#footer-telegram"
+                ></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="footer-svg">
+                <use xlink:href="../assets/svg/sprite.svg#footer-wifi"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="footer-svg">
+                <use
+                  xlink:href="../assets/svg/sprite.svg#footer-facebook"
+                ></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="footer-svg">
+                <use xlink:href="../assets/svg/sprite.svg#footer-inst"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https:/cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
