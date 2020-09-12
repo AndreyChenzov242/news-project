@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/news.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__content-wrapper">
+          <div class="header__logo-wrapper">
+            <a href="#" class="header__img-wrapper">
+              <img
+                class="header__logo-img"
+                src="../assets/img/logo.png"
+                alt="logo"
+              />
+            </a>
+
+            <div class="header__logo-text">TV Post</div>
+          </div>
+
+          <ul class="header__navbar sm-d-none">
+            <li class="navbar__item"><a href="#">новини</a></li>
+            <li class="navbar__item"><a href="#">статті</a></li>
+            <li class="navbar__item"><a href="#">інтервєю</a></li>
+            <li class="navbar__item"><a href="#">репортажі</a></li>
+            <li class="navbar__item"><a href="#">блоги</a></li>
+          </ul>
+
+          <div class="header__search-and-smm xxs-d-none">
+            <form class="search-form">
+              <input
+                class="search-form__input-text"
+                type="text"
+                placeholder="Пошук"
+              />
+              <button>
+                <svg class="svg">
+                  <use xlink:href="../assets/svg/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+            <div class="social-wrapper sm-d-none">
+              <div class="social-wrapper__text">Підписатися:</div>
+              <div class="social-wrapper__links">
+                <a href="#">
+                  <svg class="svg">
+                    <use xlink:href="../assets/svg/sprite.svg#wifi"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg">
+                    <use xlink:href="../assets/svg/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg">
+                    <use xlink:href="../assets/svg/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg twitter">
+                    <use xlink:href="../assets/svg/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <svg class="svg header__search">
+            <use xlink:href="../assets/svg/sprite.svg#search"></use>
+          </svg>
+
+          <div class="hamburger header__hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+
+          <div class="sidebar">
+            <div class="sidebar__content-wrapper">
+              <div class="menu">
+                <div class="menu__title"><a href="#">Меню</a></div>
+                <div class="menu__item"><a href="#">новини</a></div>
+                <div class="menu__item"><a href="#">статті</a></div>
+                <div class="menu__item"><a href="#">інтервєю</a></div>
+                <div class="menu__item"><a href="#">репортажі</a></div>
+                <div class="menu__item"><a href="#">блоги</a></div>
+              </div>
+              <div class="special-projects">
+                <div class="title special-projects__title">спецпроекти</div>
+                <a href="#" class="special-projects__item red-circle"
+                  >Медіатек</a
+                >
+                <a href="#" class="special-projects__item red-circle"
+                  >Громадянське суспільство</a
+                >
+                <a href="#" class="special-projects__item red-circle">
+                  Правда і вимисел про короновірус
+                </a>
+                <a href="#" class="special-projects__item red-circle">
+                  Короновірус: моніторинг медіа
+                </a>
+                <a href="#" class="special-projects__item red-circle"
+                  >Партнерські проекти</a
+                >
+              </div>
+            </div>
+            <div class="sidebar__backdrop"></div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="header__special-projects">
+          <div class="header__special-projects-wrapper">
+            <div class="special-projects__text">спецпроекти</div>
+            <a href="#" class="special-projects__item red-circle sm-d-none"
+              >Медіатек</a
+            >
+            <a href="#" class="special-projects__item red-circle sm-d-none"
+              >Громадянське суспільство</a
+            >
+            <a href="#" class="special-projects__item red-circle sm-d-none">
+              Правда і вимисел про короновірус
+            </a>
+            <a href="#" class="special-projects__item red-circle lg-d-none">
+              Короновірус: моніторинг медіа
+            </a>
+            <a href="#" class="special-projects__item red-circle sm-d-none"
+              >Партнерські проекти</a
+            >
+
+            <div class="social-wrapper special-projects__social-wrapper">
+              <div class="social-wrapper__text">Підписатися:</div>
+              <div class="social-wrapper__links">
+                <a href="#">
+                  <svg class="svg">
+                    <use xlink:href="../assets/svg/sprite.svg#sm-wifi"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg">
+                    <use
+                      xlink:href="../assets/svg/sprite.svg#sm-facebook"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg">
+                    <use
+                      xlink:href="../assets/svg/sprite.svg#sm-telegram"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="svg twitter">
+                    <use xlink:href="../assets/svg/sprite.svg#sm-twitter"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line line--grey"></div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="news-wrapper"></div>
+        <div class="main__special-projects">
+          <div
+            class="special-projects__wrapper special-projects__wrapper--left"
+          >
+            <div class="title special-projects__title rect">Спецпроект</div>
+            <div class="special-projects__img-wrapper">
+              <img src="../assets/img/special-project-img.png" alt="special" />
+            </div>
+
+            <div class="editor">
+              <div class="editor__title">Вибір редакції</div>
+              <div class="editor-card">
+                <div class="editor-card__img-wrapper">
+                  <img src="../assets/img/special-img.png" alt="special" />
+                </div>
+                <a class="editor-card__title" href="#">
+                  Як Дарницька ТЕЦ проходить екоперевірку Як Дарницька ТЕЦ
+                  проходить екоперевірку Як Дарницька
+                </a>
+                <div class="editor-card__date">8 липня, 19:30</div>
+              </div>
+
+              <div class="editor-card">
+                <div class="editor-card__img-wrapper">
+                  <img src="../assets/img/special-img.png" alt="special" />
+                </div>
+                <a class="editor-card__title" href="#">
+                  Як Дарницька ТЕЦ проходить екоперевірку Як Дарницька
+                </a>
+                <div class="editor-card__date">8 липня, 19:30</div>
+              </div>
+
+              <div class="editor-card">
+                <div class="editor-card__img-wrapper">
+                  <img src="../assets/img/special-img.png" alt="special" />
+                </div>
+                <a class="editor-card__title" href="#">
+                  Як Дарницька ТЕЦ проходить екоперевірку Як Дарницька ТЕЦ
+                  проходить екоперевірку Як Дарницька
+                </a>
+                <div class="editor-card__date">8 липня, 19:30</div>
+              </div>
+
+              <div class="editor-card">
+                <div class="editor-card__img-wrapper">
+                  <img src="../assets/img/special-img.png" alt="special" />
+                </div>
+                <a class="editor-card__title" href="#">
+                  Як Дарницька ТЕЦ проходить екоперевірку Як Дарницька ТЕЦ
+                  проходить екоперевірку Як Дарницька Як Дарницька ТЕЦ проходить
+                  екоперевірку Як Дарницька
+                </a>
+                <div class="editor-card__date">8 липня, 19:30</div>
+              </div>
+
+              <div class="editor-card">
+                <div class="editor-card__img-wrapper">
+                  <img src="../assets/img/special-img.png" alt="special" />
+                </div>
+                <a class="editor-card__title" href="#">
+                  Як Дарницька ТЕЦ проходить екоперевірку Як Дарницька ТЕЦ
+                  проходить екоперевірку Як Дарницька
+                </a>
+                <div class="editor-card__date">8 липня, 19:30</div>
+              </div>
+            </div>
+
+            <div class="blogs">
+              <div class="blogs__title">Блоги</div>
+              <div class="line line--grey line--wide"></div>
+              <div class="blogs-card">
+                <div class="blogs-card__img-wrapper">
+                  <img src="../assets/img/blog.png" alt="blog" />
+                </div>
+                <div class="blogs-card__content-wrapper">
+                  <div class="blogs-card__date">28 липня, 19:30</div>
+                  <div
+                    class="line line--grey blogs-card__line blogs-card__line--first"
+                  ></div>
+                  <a class="blogs-card__name" href="#">Видим Міський</a>
+                  <div class="line line--grey blogs-card__line xl-d-none"></div>
+                </div>
+                <div class="blogs-card__descr">
+                  Як Дарницька ТЕЦ проходить екоперевірку Як Дарницька
+                </div>
+              </div>
+
+              <div class="blogs-card">
+                <div class="blogs-card__img-wrapper">
+                  <img src="../assets/img/blog.png" alt="blog" />
+                </div>
+                <div class="blogs-card__content-wrapper">
+                  <div class="blogs-card__date">28 липня, 19:30</div>
+                  <div
+                    class="line line--grey blogs-card__line blogs-card__line--first"
+                  ></div>
+                  <a class="blogs-card__name" href="#">Видим Міський</a>
+                  <div class="line line--grey blogs-card__line xl-d-none"></div>
+                </div>
+                <div class="blogs-card__descr">
+                  Як Дарницька ТЕЦ проходить екоперевірку Як Дарницька
+                </div>
+              </div>
+
+              <div class="blogs-card">
+                <div class="blogs-card__img-wrapper">
+                  <img src="../assets/img/blog.png" alt="blog" />
+                </div>
+                <div class="blogs-card__content-wrapper">
+                  <div class="blogs-card__date">28 липня, 19:30</div>
+                  <div
+                    class="line line--grey blogs-card__line blogs-card__line--first"
+                  ></div>
+                  <a class="blogs-card__name" href="#">Видим Міський</a>
+                  <div class="line line--grey blogs-card__line xl-d-none"></div>
+                </div>
+                <div class="blogs-card__descr">
+                  Як Дарницька ТЕЦ проходить екоперевірку Як Дарницька
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="special-projects__wrapper special-projects__wrapper--right"
+          >
+            <div class="line line--wide"></div>
+            <div class="submit">
+              <div class="submit__title-wrapper">
+                <img
+                  class="submit__img"
+                  src="../assets/img/letter.png"
+                  alt="letter"
+                />
+                <div class="submit__title">Підписатися на розсилку:</div>
+              </div>
+              <input
+                class="submit__input"
+                type="text"
+                placeholder="Введіть e-mail ..."
+              />
+            </div>
+
+            <div class="social">
+              <div class="social__img-wrapper">
+                <!-- Plugin to insert a comment from facebook -->
+                <img src="../assets/img/special-human-img.png" alt="facebook" />
+              </div>
+              <div class="social__img-likes-wrapper">
+                <!-- Plugin to insert a comment from facebook -->
+                <img src="../assets/img/User_likes.png" alt="facebook" />
+              </div>
+            </div>
+
+            <div class="best-publications">
+              <div class="title best-publications__title rect">
+                ТОП-7 Публікацій
+              </div>
+              <div class="best-publications__card">
+                <a class="best-publications__name" href="#">
+                  Як Дарницька ТЕЦ проходить екоперевірку Як Дарницька
+                </a>
+                <div class="best-publications__date">28 липня, 19:30</div>
+              </div>
+              <div class="best-publications__card">
+                <a class="best-publications__name" href="#">
+                  Як Дарницька ТЕЦ проходить екоперевірку Як Дарницька
+                </a>
+                <div class="best-publications__date">28 липня, 19:30</div>
+              </div>
+              <div class="best-publications__card">
+                <a class="best-publications__name" href="#">
+                  Як Дарницька ТЕЦ проходить екоперевірку Як Дарницька Як
+                  Дарницька ТЕЦ проходить екоперевірку Як Дарницька
+                </a>
+                <div class="best-publications__date">28 липня, 19:30</div>
+              </div>
+              <div class="best-publications__card">
+                <a class="best-publications__name" href="#">
+                  Як Дарницька ТЕЦ проходить екоперевірку Як Дарницька Як
+                  Дарницька ТЕЦ проходить екоперевірку Як Дарницька
+                </a>
+                <div class="best-publications__date">28 липня, 19:30</div>
+              </div>
+              <div class="best-publications__card">
+                <a class="best-publications__name" href="#">
+                  Як Дарницька ТЕЦ проходить екоперевірку Як Дарницька
+                </a>
+                <div class="best-publications__date">28 липня, 19:30</div>
+              </div>
+
+              <div class="best-publications__image">
+                <img src="../assets/img/beatch.png" alt="beatch" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-wrapper">
+          <div class="footer__logo-wrapper">
+            <a class="logo__title" href="#">logo</a>
+            <div class="logo__circle">18+</div>
+          </div>
+          <div class="footer__content-wrapper">
+            <p>
+              2020 The Village Україна. 2017 The Village Україна. Новини твого
+              міста Люди, місця, події, новини, України
+            </p>
+            <p>Прогноз погоди наданий OpenWeatherMap</p>
+            <div class="footer__links-wrapper">
+              <a class="link" href="#">про сайт</a>
+              <a class="link" href="#">контакти</a>
+              <a class="link" href="#">Рекламодавцям</a>
+              <a class="link" href="#">Для Користувачів</a>
+              <a class="link" href="#">Вакансії</a>
+            </div>
+            <p>
+              Ми використовуваємо cookie, для того щоб збирати статистику та
+              робити котент цікавішим. Також cookie використовується задля
+              відоюраження найбільш релевантної реклами. Ви можете детальніше
+              почитати про <a href="#" class="cookie">cookie-файли</a> та
+              змінити налаштування вашого брузера
+            </p>
+          </div>
+          <div class="footer__social-wrapper">
+            <a href="#">
+              <svg class="footer-svg">
+                <use xlink:href="../assets/svg/sprite.svg#footer-twitter"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="footer-svg">
+                <use xlink:href="../assets/svg/sprite.svg#footer-google"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="footer-svg">
+                <use
+                  xlink:href="../assets/svg/sprite.svg#footer-telegram"
+                ></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="footer-svg">
+                <use xlink:href="../assets/svg/sprite.svg#footer-wifi"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="footer-svg">
+                <use
+                  xlink:href="../assets/svg/sprite.svg#footer-facebook"
+                ></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="footer-svg">
+                <use xlink:href="../assets/svg/sprite.svg#footer-inst"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https:/cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="../js/toggleHamburger.js"></script>
+  </body>
+</html>
