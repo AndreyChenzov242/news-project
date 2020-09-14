@@ -1,9 +1,17 @@
 @import "./configs.scss";
 
+body {
+  padding: 0 8.85416667vw;
+
+  @media screen and(max-width:$breakpoint-up-md) {
+    padding: 0;
+  }
+}
+
 .container {
   max-width: 1653px;
   margin: 0 auto;
-  padding: 16px 24px 0 24px;
+  padding: 16px 0 0 0;
 
   @media screen and(max-width:$breakpoint-up-xl) {
     max-width: 1218px;
@@ -11,10 +19,11 @@
 
   @media screen and(max-width:$breakpoint-up-md) {
     max-width: 100%;
+    padding: 16px 16px 0 16px;
   }
 
   @media screen and(max-width:$breakpoint-up-xs) {
-    padding: 10px;
+    padding: 10px 10px 0 10px;
   }
 }
 
@@ -34,6 +43,7 @@
 .search-form {
   display: flex;
   border: 2px solid #c4c4c4;
+  background-color: #fff;
   padding: 8px;
 
   &__input-text {
@@ -134,6 +144,12 @@
   @media screen and(max-width:$breakpoint-up-xl) {
     left: -14px;
   }
+  @media screen and(max-width:1070px) {
+    left: -9px;
+  }
+  @media screen and(max-width:$breakpoint-up-md) {
+    left: -14px;
+  }
 }
 
 .social-wrapper {
@@ -230,6 +246,12 @@
   }
 }
 
+.xllg-d-none {
+  @media screen and(max-width: 1400px) {
+    display: none;
+  }
+}
+
 .lg-d-none {
   @media screen and(max-width:$breakpoint-up-lg) {
     display: none;
@@ -256,7 +278,7 @@
 
 .xxs-d-none {
   @media screen and(max-width:$breakpoint-up-xxs) {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -459,7 +481,7 @@
 }
 
 .special-projects {
-  @media screen and(max-width:$breakpoint-up-md) {
+  @media screen and(max-width:$breakpoint-up-lg) {
     display: flex;
 
     @media screen and(max-width:$breakpoint-up-xxs) {
@@ -469,7 +491,7 @@
   }
 
   &__wrapper {
-    @media screen and(max-width:$breakpoint-up-md) {
+    @media screen and(max-width:$breakpoint-up-lg) {
       width: 100%;
     }
 
@@ -478,7 +500,7 @@
     }
 
     &--left {
-      @media screen and(max-width:$breakpoint-up-md) {
+      @media screen and(max-width:$breakpoint-up-lg) {
         padding-right: 10px;
       }
 
@@ -488,7 +510,7 @@
     }
 
     &--right {
-      @media screen and(max-width:$breakpoint-up-md) {
+      @media screen and(max-width:$breakpoint-up-lg) {
         padding-left: 10px;
       }
 
@@ -576,15 +598,27 @@
 
     &__img-wrapper {
       float: right;
-      margin-left: 35px;
+      margin-left: 15px;
       margin-bottom: 15px;
       width: 150px;
       height: 100px;
 
+      width: 120px;
+      height: 85px;
+
+      @media screen and(max-width:$breakpoint-up-xxl) {
+        width: 120px;
+        height: 85px;
+      }
+
       @media screen and(max-width:$breakpoint-up-xl) {
         width: 90px;
         height: 58px;
-        margin-left: 15px;
+      }
+
+      @media screen and(max-width:$breakpoint-up-lg) {
+        width: 35%;
+        height: auto;
       }
 
       @media screen and(max-width:$breakpoint-up-md) {

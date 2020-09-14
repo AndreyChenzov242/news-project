@@ -8,8 +8,8 @@
     display: grid;
     gap: 40px;
     grid-gap: 40px;
-    grid-template-columns: minmax(460px, 1fr) minmax(600px, 1fr) minmax(
-        460px,
+    grid-template-columns: minmax(240px, 1fr) minmax(500px, 1.3fr) minmax(
+        240px,
         1fr
       );
 
@@ -21,17 +21,15 @@
     grid-template-rows: max-content;
 
     @media screen and(max-width:$breakpoint-up-xxl) {
-      grid-template-columns: minmax(290px, 1fr) minmax(530px, 1.3fr) minmax(
-          290px,
-          1fr
-        );
-
-      gap: 40px;
-      grid-gap: 40px;
+      gap: 20px;
+      grid-gap: 20px;
     }
 
     @media screen and(max-width:$breakpoint-up-xl) {
-      gap: 20px;
+      grid-template-columns: minmax(240px, 1fr) minmax(430px, 1.3fr) minmax(
+          240px,
+          1fr
+        );
     }
 
     @media screen and(max-width:$breakpoint-up-lg) {
@@ -44,7 +42,7 @@
       grid-gap: 20px;
     }
 
-    @media screen and(max-width:$breakpoint-up-md) {
+    @media screen and(max-width:$breakpoint-up-lg) {
       gap: 24px;
       grid-gap: 24px;
       grid-template-columns: 100%;
@@ -81,7 +79,7 @@
             height: 300px;
           }
 
-          @media screen and(max-width:$breakpoint-up-md) {
+          @media screen and(max-width:$breakpoint-up-lg) {
             height: 560px;
           }
 
@@ -103,7 +101,7 @@
             object-fit: none;
             object-position: top;
 
-            @media screen and(max-width:$breakpoint-up-md) {
+            @media screen and(max-width:$breakpoint-up-lg) {
               object-fit: cover;
             }
           }
@@ -120,8 +118,14 @@
             color: #ffffff;
             margin: 0 auto;
 
-            @media screen and(max-width:$breakpoint-up-lg) {
+            @media screen and(max-width:$breakpoint-up-xl) {
               font-size: 20px;
+            }
+
+            @media screen and(max-width:$breakpoint-up-lg) {
+              max-width: 100%;
+              font-size: 20px;
+              top: 80%;
             }
 
             @media screen and(max-width:$breakpoint-up-md) {
@@ -280,7 +284,7 @@
             line-height: 1.15;
             margin-top: 20px;
             color: #000000;
-            max-height: 167px;
+            max-height: 165px;
             overflow: hidden;
 
             @media screen and(max-width:$breakpoint-up-xl) {
@@ -310,7 +314,7 @@
     padding-bottom: 70px;
     position: relative;
 
-    @media screen and(max-width:$breakpoint-up-md) {
+    @media screen and(max-width:$breakpoint-up-lg) {
       padding-bottom: 20px;
     }
 

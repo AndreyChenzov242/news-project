@@ -10,13 +10,13 @@
   padding-bottom: 70px;
   grid-template-columns: 1fr 464px;
 
-  @media screen and(max-width:$breakpoint-up-xl) {
+  @media screen and(max-width:$breakpoint-up-xxl) {
     grid-template-columns: 1fr 300px;
     grid-gap: 20px;
     gap: 20px;
   }
 
-  @media screen and(max-width:$breakpoint-up-md) {
+  @media screen and(max-width:$breakpoint-up-lg) {
     grid-template-columns: 1fr;
     grid-gap: 38px;
     gap: 38px;
@@ -30,7 +30,7 @@
   @media screen and(max-width:$breakpoint-up-xxs) {
     grid-gap: 28px;
     gap: 28px;
-    padding-bottom: 50px;
+    padding-bottom: 24px;
   }
 
   .special-projects__img-wrapper {
@@ -69,7 +69,7 @@
         }
       }
 
-      @media screen and(max-width:$breakpoint-up-xs) {
+      @media screen and(max-width:$breakpoint-up-xxs) {
         flex-direction: column;
         padding: 20px 0;
       }
