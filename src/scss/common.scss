@@ -28,15 +28,19 @@ body {
 }
 
 .title {
-  font-size: 26px;
-  line-height: 1.15;
+  font-size: 18px;
+  line-height: 1.16;
   text-transform: uppercase;
-  position: relative;
-  color: #000000;
+  color: #fafafa;
+  width: -webkit-max-content;
+  width: max-content;
+  padding: 4px 24px;
+  background-color: #dd3333;
+  border-radius: 5px;
 
-  @media screen and(max-width:$breakpoint-up-xl) {
-    font-size: 24px;
-    line-height: 1.16;
+  @media screen and(max-width:$breakpoint-up-lg) {
+    padding: 4px 12px;
+    font-size: 16px;
   }
 }
 
@@ -87,27 +91,6 @@ body {
 
   &--thin {
     height: 1px;
-  }
-}
-
-.rect {
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 4px;
-    height: 100%;
-    left: -8px;
-    background-color: #f04e45;
-  }
-
-  &--blue::before {
-    background-color: #0878f7;
-  }
-
-  &--wide::before {
-    width: 12px;
-    // left: -20px;
   }
 }
 
@@ -366,7 +349,6 @@ body {
 
 .news {
   &__title {
-    margin-left: 8px;
     margin-bottom: 12px;
   }
 
@@ -521,7 +503,6 @@ body {
   }
 
   &__title {
-    margin-left: 8px;
     margin-bottom: 15px;
   }
 
@@ -548,21 +529,7 @@ body {
   }
 
   &__title {
-    margin-top: 16px;
-    font-size: 18px;
-    line-height: 1.16;
-    text-transform: uppercase;
-    color: #fafafa;
-    width: max-content;
-    padding: 4px 24px;
-    background-color: #dd3333;
-    border-radius: 5px;
     margin-bottom: 10px;
-
-    @media screen and(max-width:$breakpoint-up-lg) {
-      padding: 4px 12px;
-      font-size: 16px;
-    }
   }
 
   &-card {
@@ -791,7 +758,6 @@ body {
 
 .best-publications {
   &__title {
-    margin-left: 8px;
     margin-bottom: 13px;
   }
 

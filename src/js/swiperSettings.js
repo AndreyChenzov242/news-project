@@ -3,5 +3,6 @@ $(".swiper-wrapper").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   dots: true,
-  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 3000,
 });
