@@ -213,8 +213,8 @@
           z-index: 99;
           top: 50%;
           transform: translateY(-50%);
-          width: auto;
-          height: auto;
+          width: 42px;
+          height: 42px;
 
           &::before {
             opacity: 1;
@@ -236,11 +236,71 @@
         }
 
         .slick-next {
-          right: 0;
+          right: 20px;
+
+          @media screen and(max-width:$breakpoint-up-xl) {
+            right: 15px;
+          }
+
+          @media screen and(max-width:$breakpoint-up-lg) {
+            right: 30px;
+          }
+
+          @media screen and(max-width:$breakpoint-up-xxs) {
+            right: 5px;
+          }
+
+          @media screen and(max-width:$breakpoint-up-xxxs) {
+            right: 0;
+          }
+
+          &::before {
+            content: "";
+            border: solid;
+            border-width: 0 4px 4px 0;
+            display: inline-block;
+            padding: 8px;
+            transform: rotate(45deg) translateY(-5px);
+            -webkit-transform: rotate(-45deg);
+
+            @media screen and(max-width:$breakpoint-up-xxs) {
+              padding: 6px;
+            }
+          }
         }
 
         .slick-prev {
-          left: 0;
+          left: 20px;
+
+          @media screen and(max-width:$breakpoint-up-xl) {
+            left: 15px;
+          }
+
+          @media screen and(max-width:$breakpoint-up-lg) {
+            left: 30px;
+          }
+
+          @media screen and(max-width:$breakpoint-up-xxs) {
+            left: 5px;
+          }
+
+          @media screen and(max-width:$breakpoint-up-xxxs) {
+            left: 0;
+          }
+
+          &::before {
+            content: "";
+            border: solid;
+            border-width: 0 4px 4px 0;
+            display: inline-block;
+            padding: 8px;
+            transform: rotate(45deg) translateY(-5px);
+            -webkit-transform: rotate(135deg);
+
+            @media screen and(max-width:$breakpoint-up-xxs) {
+              padding: 6px;
+            }
+          }
         }
       }
     }
@@ -254,6 +314,12 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
+        }
+
+        &__title {
+          font-size: 26px;
+          line-height: 1.15;
+          color: #d21e4a;
         }
 
         &__link {

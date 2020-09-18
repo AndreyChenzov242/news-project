@@ -28,33 +28,48 @@ body {
 }
 
 .title {
-  font-size: 18px;
-  line-height: 1.16;
+  font-size: 26px;
+  line-height: 1.15;
   text-transform: uppercase;
-  color: #fafafa;
-  width: -webkit-max-content;
-  width: max-content;
-  padding: 4px 24px;
-  background-color: #dd3333;
-  border-radius: 5px;
+  position: relative;
+  color: #000000;
 
-  @media screen and(max-width:$breakpoint-up-lg) {
-    padding: 4px 12px;
-    font-size: 16px;
+  @media screen and(max-width:$breakpoint-up-xl) {
+    font-size: 24px;
+    line-height: 1.16;
   }
 }
 
 .search-form {
   display: flex;
-  border: 2px solid #c4c4c4;
+  border-bottom: 2px solid #000;
   background-color: #fff;
-  padding: 8px;
+  padding: 8px 8px 8px 0;
+
+  @media screen and(max-width:$breakpoint-up-sm) {
+    border: 2px solid #c4c4c4;
+    padding: 8px;
+  }
 
   &__input-text {
     border: none;
     background-color: transparent;
     line-height: 1;
     padding-right: 8px;
+  }
+}
+
+.search-form-on-click {
+  width: 100%;
+  display: none;
+  margin-bottom: 12px;
+
+  input {
+    width: calc(100% - 22px);
+  }
+
+  button {
+    display: inline-block;
   }
 }
 
@@ -91,6 +106,26 @@ body {
 
   &--thin {
     height: 1px;
+  }
+}
+
+.rect {
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    left: -8px;
+    background-color: #f04e45;
+  }
+
+  &--blue::before {
+    background-color: #0878f7;
+  }
+
+  &--wide::before {
+    width: 12px;
   }
 }
 
@@ -349,7 +384,12 @@ body {
 
 .news {
   &__title {
-    margin-bottom: 17px;
+    margin-left: 8px;
+    margin-bottom: 14px;
+
+    @media screen and(max-width:$breakpoint-up-xl) {
+      margin-bottom: 19px;
+    }
   }
 
   &__card-wrapper {
@@ -503,7 +543,12 @@ body {
   }
 
   &__title {
-    margin-bottom: 17px;
+    margin-left: 8px;
+    margin-bottom: 14px;
+
+    @media screen and(max-width:$breakpoint-up-xl) {
+      margin-bottom: 19px;
+    }
   }
 
   &__img-wrapper {
@@ -529,7 +574,21 @@ body {
   }
 
   &__title {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 1.16;
+    text-transform: uppercase;
+    color: #fafafa;
+    width: max-content;
+    padding: 4px 24px;
+    background-color: #dd3333;
+    border-radius: 5px;
     margin-bottom: 10px;
+
+    @media screen and(max-width:$breakpoint-up-lg) {
+      padding: 4px 12px;
+      font-size: 16px;
+    }
   }
 
   &-card {
@@ -631,17 +690,21 @@ body {
   }
 
   &__title {
-    font-size: 36px;
-    line-height: 0.77;
-    color: #cc0033;
-    padding: 10px 5px;
-    background-color: #f0f0f0;
-    padding-bottom: 25px;
+    margin-top: 39px;
+    font-size: 18px;
+    line-height: 1.16;
+    text-transform: uppercase;
+    color: #fafafa;
+    width: -webkit-max-content;
+    width: max-content;
+    padding: 4px 24px;
+    background-color: #dd3333;
+    border-radius: 5px;
+    margin-bottom: 34px;
   }
 
   &-card {
-    padding: 20px;
-    background-color: #f0f0f0;
+    padding: 20px 0;
     margin-bottom: 2px;
 
     @media screen and(max-width:$breakpoint-up-xl) {
@@ -758,6 +821,7 @@ body {
 
 .best-publications {
   &__title {
+    margin-left: 8px;
     margin-bottom: 13px;
   }
 

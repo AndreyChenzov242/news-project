@@ -70,9 +70,14 @@
             </div>
           </div>
 
-          <svg class="svg header__search">
-            <use xlink:href="../assets/svg/sprite.svg#search"></use>
-          </svg>
+          <button class="show-search">
+            <svg class="svg header__search show-search__svg">
+              <use xlink:href="../assets/svg/sprite.svg#search"></use>
+            </svg>
+            <span class="show-search__text" style="display: none"
+              >&#x2716;</span
+            >
+          </button>
 
           <div class="hamburger header__hamburger">
             <div class="line"></div>
@@ -112,6 +117,20 @@
             <div class="sidebar__backdrop"></div>
           </div>
         </div>
+
+        <form class="search-form search-form-on-click">
+          <input
+            class="search-form__input-text"
+            type="text"
+            placeholder="Пошук"
+          />
+          <button>
+            <svg class="svg">
+              <use xlink:href="../assets/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+
         <div class="line"></div>
         <div class="header__special-projects">
           <div class="header__special-projects-wrapper">
@@ -162,9 +181,8 @@
               </div>
             </div>
           </div>
-
-          <div class="line line--grey"></div>
         </div>
+        <div class="line line--grey"></div>
       </header>
 
       <main class="main">
@@ -423,7 +441,7 @@
         </div>
 
         <div class="main__news news lg-d-none">
-          <div class="title news__title">останні новини</div>
+          <div class="title news__title rect">останні новини</div>
 
           <div class="news__card-wrapper">
             <div class="card__content-wrapper">
@@ -937,5 +955,6 @@
 
     <script src="https:/cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="../js/toggleHamburger.js"></script>
+    <script src="../js/toggleSearch.js"></script>
   </body>
 </html>

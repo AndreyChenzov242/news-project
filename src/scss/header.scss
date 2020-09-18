@@ -130,7 +130,6 @@
   }
 
   &__search-and-smm {
-    background-color: #f0f0f0;
     padding: 8px;
     margin-left: auto;
     margin-right: auto;
@@ -147,6 +146,7 @@
 
     @media screen and(max-width:$breakpoint-up-sm) {
       padding: 5px;
+      margin-bottom: 0;
     }
 
     .search-form {
@@ -183,19 +183,20 @@
   }
 
   &__special-projects {
-    margin-top: 16px;
+    padding: 15px 0;
     background-color: #f0f0f0;
-    padding-bottom: 6px;
+    @media screen and(max-width:$breakpoint-up-xl) {
+      padding: 12px 0;
+    }
 
-    @media screen and(max-width:$breakpoint-up-xxl) {
-      margin-top: 8px;
+    @media screen and(max-width:$breakpoint-up-md) {
+      padding: 8px 0;
     }
 
     &-wrapper {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      margin-bottom: 4px;
 
       @media screen and(max-width:$breakpoint-up-xxl) {
         justify-content: space-between;
@@ -261,12 +262,16 @@
     }
   }
 
-  &__search {
+  .show-search {
     display: none;
     margin-left: auto;
 
     @media screen and(max-width:$breakpoint-up-xxs) {
       display: block;
+    }
+
+    &__text {
+      font-size: 24px;
     }
   }
 

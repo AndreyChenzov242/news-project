@@ -83,9 +83,14 @@
             </div>
           </div>
 
-          <svg class="svg header__search">
-            <use xlink:href="../assets/svg/sprite.svg#search"></use>
-          </svg>
+          <button class="show-search">
+            <svg class="svg header__search show-search__svg">
+              <use xlink:href="../assets/svg/sprite.svg#search"></use>
+            </svg>
+            <span class="show-search__text" style="display: none"
+              >&#x2716;</span
+            >
+          </button>
 
           <div class="hamburger header__hamburger">
             <div class="line"></div>
@@ -125,6 +130,20 @@
             <div class="sidebar__backdrop"></div>
           </div>
         </div>
+
+        <form class="search-form search-form-on-click">
+          <input
+            class="search-form__input-text"
+            type="text"
+            placeholder="Пошук"
+          />
+          <button>
+            <svg class="svg">
+              <use xlink:href="../assets/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+
         <div class="line"></div>
         <div class="header__special-projects">
           <div class="header__special-projects-wrapper">
@@ -175,15 +194,14 @@
               </div>
             </div>
           </div>
-
-          <div class="line line--grey"></div>
         </div>
+        <div class="line line--grey"></div>
       </header>
 
       <main class="main">
         <div class="main__content-wrapper">
           <div class="main__news news">
-            <div class="title news__title">останні новини</div>
+            <div class="title news__title rect">останні новини</div>
 
             <div class="news__card-wrapper">
               <div class="card__content-wrapper">
@@ -669,7 +687,7 @@
 
           <div class="main__publications">
             <div class="publications__title-wrapper">
-              <div class="publications__title title">Публікації</div>
+              <div class="publications__title">Публікації</div>
               <a class="publications__link" href="#">Всі публікації </a>
             </div>
 
@@ -910,7 +928,7 @@
             <div
               class="special-projects__wrapper special-projects__wrapper--left"
             >
-              <div class="title special-projects__title">Спецпроект</div>
+              <div class="title special-projects__title rect">Спецпроект</div>
               <div class="special-projects__img-wrapper">
                 <img
                   src="../assets/img/special-project-img.png"
@@ -919,7 +937,7 @@
               </div>
 
               <div class="editor">
-                <div class="editor__title title">Вибір редакції</div>
+                <div class="editor__title">Вибір редакції</div>
                 <div class="editor-card">
                   <div class="editor-card__img-wrapper">
                     <img src="../assets/img/special-img.png" alt="special" />
@@ -977,9 +995,7 @@
               </div>
 
               <div class="blogs">
-                <div class="blogs__title">
-                  <div class="title">Блоги</div>
-                </div>
+                <div class="blogs__title">Блоги</div>
                 <div class="line line--grey line--wide"></div>
                 <div class="blogs-card">
                   <div class="blogs-card__img-wrapper">
@@ -1075,7 +1091,7 @@
               </div>
 
               <div class="best-publications">
-                <div class="title best-publications__title">
+                <div class="title best-publications__title rect">
                   ТОП-7 Публікацій
                 </div>
                 <div class="best-publications__card">
@@ -1118,7 +1134,7 @@
             </div>
           </div>
           <div class="main__video">
-            <div class="video__title title">Відео</div>
+            <div class="video__title rect rect--blue rect--wide">Відео</div>
             <div class="video-wrapper">
               <a class="video__big-video d-block" href="#">
                 <img src="../assets/img/big-video.png" alt="big-video" />
@@ -1247,5 +1263,6 @@
     ></script>
     <script src="../js/swiperSettings.js"></script>
     <script src="../js/toggleHamburger.js"></script>
+    <script src="../js/toggleSearch.js"></script>
   </body>
 </html>
