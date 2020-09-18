@@ -71,6 +71,10 @@ body {
   button {
     display: inline-block;
   }
+
+  @media screen and(min-width:$breakpoint-up-xxs) {
+    display: none !important;
+  }
 }
 
 .svg {
